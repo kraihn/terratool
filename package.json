@@ -1,0 +1,21 @@
+{
+  "name": "terratool",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "prestart": "tsc",
+    "start": "node dist/index.js",
+    "lint": "tslint --fix src/**/*.ts",
+    "update:groups": "az group list --output=json > tmp/groups.json",
+    "update:resources": "az resource list --output=json > tmp/resources.json"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.53",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "license": "MIT"
+}
