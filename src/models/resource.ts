@@ -22,7 +22,6 @@ export class Resource {
                 return asp[0].substring(asp[0].lastIndexOf('/') + 1);
             }
         }
-        console.log(this.obj);
         return undefined;
     }
 
